@@ -1,0 +1,8 @@
+login success user=sachin
+login failed user=admin
+login failed user=root
+login success user=test
+error invalid password
+login failed user=admin
+error connection timeout
+o
