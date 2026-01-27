@@ -47,4 +47,13 @@ The project was extended to track failed login attempts by IP address.
 - Generates SOC-style security reports
 
 This simulates real-world SOC detection logic used in security monitoring.
+## Level 4: Port-Aware Attack Detection
+
+The tool was enhanced to analyze attacks by **IP address and service port**.
+
+### Capabilities
+- Identifies attacked services (SSH, FTP, etc.)
+- Tracks brute-force attempts per IP & port
+- Detects service-specific attack patterns
+- Generates SOC-grade detection reports
 

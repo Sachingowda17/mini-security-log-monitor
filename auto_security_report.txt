@@ -1,12 +1,14 @@
-SECURITY LOG ANALYSIS REPORT (LEVEL 3)
+SECURITY LOG ANALYSIS REPORT (LEVEL 4)
 ------------------------------------
-Total failed login attempts: 6
+Total failed attempts: 9
 Total error events: 1
 
-FAILED LOGIN ATTEMPTS BY IP:
-10.0.0.5 → 3 failed attempts
-203.0.113.50 → 3 failed attempts
+FAILED ATTEMPTS BY IP & PORT:
+10.0.0.5:22 → 3 failures
+203.0.113.50:22 → 3 failures
+198.51.100.23:21 → 3 failures
 
-POTENTIAL ATTACKERS:
-ALERT: 10.0.0.5 suspected brute-force attacker
-ALERT: 203.0.113.50 suspected brute-force attacker
+POTENTIAL BRUTE-FORCE ATTACKS:
+ALERT: 10.0.0.5:22 suspected brute-force attack
+ALERT: 203.0.113.50:22 suspected brute-force attack
+ALERT: 198.51.100.23:21 suspected brute-force attack
