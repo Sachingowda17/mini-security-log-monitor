@@ -1,0 +1,6 @@
+SECURITY LOG ANALYSIS
+---------------------
+Failed login attempts: 3
+Error events: 2
+ALERT: Possible brute-force attack detected
+NOTE: System errors found

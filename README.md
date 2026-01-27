@@ -1,4 +1,4 @@
-# Mini Security Log Monitor 🔐
+# Mini Security Log Monitor 
 
 This project simulates basic security log monitoring performed by SOC analysts.
 
@@ -20,4 +20,19 @@ The project analyzes authentication logs to:
 ## Cybersecurity Relevance
 Log monitoring and analysis are core responsibilities in Security Operations Center (SOC) roles.
 This project demonstrates how suspicious activity can be detected from system logs.
+
+## Level 2 Automation (Python)
+
+This project includes a Python script that automates log monitoring.
+
+### What the script does
+- Reads authentication logs
+- Counts failed login attempts
+- Counts system errors
+- Detects possible brute-force attacks
+- Generates an automated security report
+
+### File added
+- log_monitor.py → Python-based log monitoring script
+- auto_security_report.txt → Automatically generated report
 
