@@ -1,6 +1,12 @@
-SECURITY LOG ANALYSIS
----------------------
-Failed login attempts: 3
-Error events: 2
-ALERT: Possible brute-force attack detected
-NOTE: System errors found
+SECURITY LOG ANALYSIS REPORT (LEVEL 3)
+------------------------------------
+Total failed login attempts: 6
+Total error events: 1
+
+FAILED LOGIN ATTEMPTS BY IP:
+10.0.0.5 → 3 failed attempts
+203.0.113.50 → 3 failed attempts
+
+POTENTIAL ATTACKERS:
+ALERT: 10.0.0.5 suspected brute-force attacker
+ALERT: 203.0.113.50 suspected brute-force attacker

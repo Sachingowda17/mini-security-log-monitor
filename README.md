@@ -36,3 +36,15 @@ This project includes a Python script that automates log monitoring.
 - log_monitor.py → Python-based log monitoring script
 - auto_security_report.txt → Automatically generated report
 
+## Level 3: IP-Based Attack Detection
+
+The project was extended to track failed login attempts by IP address.
+
+### Features
+- Extracts IP addresses from logs
+- Counts failed logins per IP
+- Detects potential brute-force attackers
+- Generates SOC-style security reports
+
+This simulates real-world SOC detection logic used in security monitoring.
+
