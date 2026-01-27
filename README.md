@@ -1,59 +1,85 @@
 # Mini Security Log Monitor 
 
-This project simulates basic security log monitoring performed by SOC analysts.
+A Python-based security log monitoring project that simulates real-world SOC (Security Operations Center) detection workflows.
 
-## Project Description
-The project analyzes authentication logs to:
-- Detect failed login attempts
-- Identify system errors
-- Summarize findings in a security report
+---
 
-## Files in this Project
-- auth.log → Sample authentication log data
-- security_report.txt → Analysis report based on log findings
+##  Project Overview
+This project analyzes authentication logs to detect suspicious security activity such as:
+- Failed login attempts
+- System error events
+- Brute-force attacks
+- Service-specific attacks using ports (SSH, FTP)
 
-## Tools Used
+It demonstrates how SOC analysts monitor logs, track attackers by IP address, and identify targeted services.
+
+---
+
+## How It Works
+1. Reads authentication log data from `auth.log`
+2. Extracts key fields:
+   - Username
+   - IP address
+   - Service port
+3. Counts failed login attempts per IP and port
+4. Detects brute-force behavior based on thresholds
+5. Generates an automated SOC-style security report
+
+---
+
+##  Project Structure
+mini-security-log-monitor/
+│
+├── auth.log # Sample authentication log data
+├── log_monitor.py # Python-based detection engine
+├── auto_security_report.txt # Automated SOC security report
+├── security_report.txt # Manual analysis (Level 1 reference)
+└── README.md
+
+---
+
+##  Tools & Technologies
 - Linux
-- grep
-- basic log analysis
+- Python 3
+- Log analysis
+- IP-based detection
+- Port-aware attack analysis
+- Git & GitHub
 
-## Cybersecurity Relevance
-Log monitoring and analysis are core responsibilities in Security Operations Center (SOC) roles.
-This project demonstrates how suspicious activity can be detected from system logs.
+---
 
-## Level 2 Automation (Python)
+##  Detection Capabilities (Level 4)
+- Failed login detection
+- IP-based attacker identification
+- Port-aware attack detection
+- Brute-force attack detection per service
+- Automated SOC-style reporting
 
-This project includes a Python script that automates log monitoring.
+---
 
-### What the script does
-- Reads authentication logs
-- Counts failed login attempts
-- Counts system errors
-- Detects possible brute-force attacks
-- Generates an automated security report
+##  Cybersecurity Relevance
+Log monitoring and alerting are core responsibilities in SOC and Blue Team roles.
+This project simulates how security analysts:
+- Identify malicious IPs
+- Detect brute-force attacks
+- Analyze which services are targeted
+- Generate actionable security reports
 
-### File added
-- log_monitor.py → Python-based log monitoring script
-- auto_security_report.txt → Automatically generated report
+---
 
-## Level 3: IP-Based Attack Detection
+##  Learning Outcomes
+Through this project, I gained hands-on experience in:
+- Defensive cybersecurity (Blue Team)
+- SOC detection logic
+- Security log analysis
+- Python automation for security
+- GitHub-based project documentation
 
-The project was extended to track failed login attempts by IP address.
+---
 
-### Features
-- Extracts IP addresses from logs
-- Counts failed logins per IP
-- Detects potential brute-force attackers
-- Generates SOC-style security reports
-
-This simulates real-world SOC detection logic used in security monitoring.
-## Level 4: Port-Aware Attack Detection
-
-The tool was enhanced to analyze attacks by **IP address and service port**.
-
-### Capabilities
-- Identifies attacked services (SSH, FTP, etc.)
-- Tracks brute-force attempts per IP & port
-- Detects service-specific attack patterns
-- Generates SOC-grade detection reports
+##  Future Enhancements
+- Severity levels (Low / Medium / High)
+- Timestamp and time-based attack correlation
+- Alerting system (email / console)
+- SIEM-style correlation logic (Splunk-like)
 
