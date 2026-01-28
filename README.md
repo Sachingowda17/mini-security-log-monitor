@@ -1,4 +1,4 @@
-# Mini Security Log Monitor 🔐
+# Mini Security Log Monitor 
 
 A multi-level Python-based security log monitoring project that simulates real-world SOC (Security Operations Center) detection workflows.
 
