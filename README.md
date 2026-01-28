@@ -110,5 +110,51 @@ The project demonstrates how SOC analysts monitor logs, track attackers, and gen
 
 ---
 
-## 📂 Project Structure
+## 🛠 Tools & Technologies
+- Linux
+- Python 3
+- Security log analysis
+- IP & port-based detection
+- Time-based correlation
+- Git & GitHub
+
+---
+
+## 🔐 Detection Capabilities
+- Failed login detection
+- IP-based attacker identification
+- Port-aware service attack detection
+- Brute-force attack identification
+- Timestamped alerts with severity levels
+- SOC-style reporting
+
+---
+
+## 🎯 Cybersecurity Relevance
+This project reflects real-world SOC and Blue Team responsibilities, including:
+- Monitoring authentication activity
+- Identifying malicious IPs
+- Detecting brute-force attacks
+- Prioritizing alerts using severity
+- Creating actionable security reports
+
+---
+
+## 🚀 Learning Outcomes
+Through this project, I gained hands-on experience in:
+- Defensive cybersecurity (Blue Team)
+- SOC detection workflows
+- Security log monitoring
+- Python-based security automation
+- Professional documentation and GitHub workflows
+
+---
+
+## 🔮 Future Enhancements
+- Attack window correlation
+- Alert escalation rules
+- Email or SIEM-style alerts
+- Dashboard visualization
+- Integration with SIEM tools (Splunk-style logic)
+
 
