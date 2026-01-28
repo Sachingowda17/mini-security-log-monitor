@@ -1,14 +1,23 @@
-SECURITY LOG ANALYSIS REPORT (LEVEL 4)
-------------------------------------
-Total failed attempts: 9
-Total error events: 1
+SECURITY LOG ANALYSIS REPORT (LEVEL 5)
+====================================
 
-FAILED ATTEMPTS BY IP & PORT:
-10.0.0.5:22 → 3 failures
-203.0.113.50:22 → 3 failures
-198.51.100.23:21 → 3 failures
+Target: 10.0.0.5:22
+Severity: MEDIUM
+Attempts: 3
+First Seen: 2026-01-27 10:01:15
+Last Seen: 2026-01-27 10:01:25
+----------------------------------------
+Target: 203.0.113.50:22
+Severity: MEDIUM
+Attempts: 3
+First Seen: 2026-01-27 10:02:10
+Last Seen: 2026-01-27 10:02:20
+----------------------------------------
+Target: 198.51.100.23:21
+Severity: MEDIUM
+Attempts: 3
+First Seen: 2026-01-27 10:03:10
+Last Seen: 2026-01-27 10:03:20
+----------------------------------------
 
-POTENTIAL BRUTE-FORCE ATTACKS:
-ALERT: 10.0.0.5:22 suspected brute-force attack
-ALERT: 203.0.113.50:22 suspected brute-force attack
-ALERT: 198.51.100.23:21 suspected brute-force attack
+Total error events detected: 1
