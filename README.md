@@ -1,160 +1,187 @@
-# Mini Security Log Monitor 
+# Mini Security Log Monitor 🔐
 
-A multi-level Python-based security log monitoring project that simulates real-world SOC (Security Operations Center) detection workflows.
+A Python-based cybersecurity project that simulates real-world SOC (Security Operations Center) log monitoring and attack detection workflows.
 
-This project evolves step by step from basic log analysis to advanced SOC-style alerting with severity and timestamps.
+The project evolves step by step from basic manual log analysis to advanced SOC-grade correlation and time-window based attack detection.
 
 ---
 
 ## 📌 Project Overview
-The Mini Security Log Monitor analyzes authentication logs to detect suspicious activity such as:
-- Failed login attempts
-- System error events
-- Brute-force attacks
-- Attacks targeting specific services (SSH, FTP)
-- Time-based attack patterns with severity classification
 
-The project demonstrates how SOC analysts monitor logs, track attackers, and generate actionable security reports.
+Modern systems generate large volumes of security logs. Manual log analysis is time-consuming and prone to error.  
+This project provides an automated approach to analyze authentication logs, detect suspicious activity, and generate actionable security alerts.
+
+The system detects:
+- Failed login attempts
+- Brute-force attacks
+- Attacker identification using IP addresses
+- Service-level attacks using ports
+- Time-based attack patterns with severity escalation
 
 ---
 
-## 🧱 Project Evolution (Levels 1 → 5)
+## 🧱 Project Evolution (Levels 1 – 6)
 
 ### 🔹 Level 1: Manual Log Analysis
-**Goal:** Understand how security analysts read logs.
+**Objective:** Understand security logs and identify suspicious activity.
 
-**What was done:**
-- Manually analyzed authentication logs
-- Identified failed login attempts
-- Detected system errors
-- Wrote a basic security report
+**Features:**
+- Manual inspection of authentication logs
+- Identification of failed login attempts
+- Detection of system errors
+- Creation of a basic security report
 
-**Skills learned:**
-- Log reading
-- Pattern identification
-- Security reporting fundamentals
+**Skills Gained:**
+- Log interpretation
+- Security fundamentals
+- SOC awareness
 
 ---
 
-### 🔹 Level 2: Python Automation
-**Goal:** Automate log analysis using Python.
+### 🔹 Level 2: Automation Using Python
+**Objective:** Automate repetitive SOC tasks.
 
-**What was added:**
+**Features:**
 - Python script to read log files
 - Automatic counting of failed logins and errors
-- Automated generation of security reports
+- Auto-generation of security reports
 
-**Skills learned:**
+**Skills Gained:**
 - Python file handling
-- Basic detection logic
-- Security automation concepts
+- Automation mindset
+- SOC efficiency
 
 ---
 
 ### 🔹 Level 3: IP-Based Attack Detection
-**Goal:** Identify attackers using IP addresses.
+**Objective:** Identify attackers using IP addresses.
 
-**What was added:**
-- IP address extraction from logs
-- Tracking failed login attempts per IP
+**Features:**
+- Extraction of IP addresses from logs
+- Tracking failed attempts per IP
 - Detection of potential brute-force attackers
 
-**Skills learned:**
-- IP-based analysis
-- Brute-force detection logic
-- SOC-style attacker tracking
+**Skills Gained:**
+- IP analysis
+- Attacker attribution
+- Blue Team detection logic
 
 ---
 
 ### 🔹 Level 4: Port-Aware Attack Detection
-**Goal:** Detect which services are under attack.
+**Objective:** Identify which services are under attack.
 
-**What was added:**
-- Port extraction from logs
-- Detection of attacks per IP and port
-- Identification of targeted services (SSH – port 22, FTP – port 21)
+**Features:**
+- Extraction of service ports from logs
+- IP + port correlation
+- Detection of service-specific attacks (e.g., SSH, FTP)
 
-**Skills learned:**
+**Skills Gained:**
+- Network fundamentals
 - Service-level security monitoring
-- Port-aware attack analysis
 - Advanced SOC detection logic
 
 ---
 
-### 🔹 Level 5: Timestamped Alerts & Severity
-**Goal:** Add time context and alert severity.
+### 🔹 Level 5: Timestamped Alerts & Severity Classification
+**Objective:** Add time awareness and alert prioritization.
 
-**What was added:**
+**Features:**
 - Timestamp parsing from logs
 - First-seen and last-seen tracking
 - Severity classification (LOW / MEDIUM / HIGH)
-- SOC-style alert reporting with time context
+- SOC-style alert reporting
 
-**Skills learned:**
-- Time-based attack analysis
-- Alert prioritization
-- SOC incident severity assessment
+**Skills Gained:**
+- Incident prioritization
+- Alert severity assessment
+- SOC incident response concepts
 
 ---
 
-## ⚙️ How the System Works
-1. Reads authentication logs (`auth.log`)
-2. Extracts:
-   - Timestamp
-   - Username
-   - IP address
-   - Service port
-3. Tracks failed login attempts per IP and port
-4. Assigns severity based on attack frequency
-5. Generates an automated SOC-style security report
+### 🔹 Level 6: Correlation & Attack Window Detection (Final Level)
+**Objective:** Reduce noise and detect real attacks using correlation.
+
+**Features:**
+- Time-window based detection (burst attacks)
+- Correlation of multiple events
+- Severity escalation based on frequency and speed
+- Noise reduction using SOC-grade logic
+
+**Skills Gained:**
+- Correlation logic
+- Attack pattern analysis
+- SOC L2-level thinking
+
+
+## ⚙️ System Workflow
+
+Authentication Logs
+↓
+Log Parsing & Preprocessing
+↓
+IP & Port Correlation
+↓
+Time Window Analysis
+↓
+Severity Classification
+↓
+SOC-Style Security Report
 
 ---
 
 ## 🛠 Tools & Technologies
+
 - Linux
 - Python 3
 - Security log analysis
-- IP & port-based detection
-- Time-based correlation
+- IP and port-based detection
+- Time-based correlation logic
 - Git & GitHub
 
 ---
 
 ## 🔐 Detection Capabilities
+
 - Failed login detection
 - IP-based attacker identification
 - Port-aware service attack detection
-- Brute-force attack identification
-- Timestamped alerts with severity levels
-- SOC-style reporting
+- Brute-force attack detection
+- Timestamped alerts
+- Severity escalation
+- SOC-grade correlation and noise reduction
 
 ---
 
 ## 🎯 Cybersecurity Relevance
+
 This project reflects real-world SOC and Blue Team responsibilities, including:
 - Monitoring authentication activity
-- Identifying malicious IPs
 - Detecting brute-force attacks
-- Prioritizing alerts using severity
-- Creating actionable security reports
+- Identifying malicious IPs
+- Prioritizing incidents using severity
+- Generating actionable security reports
 
 ---
 
 ## 🚀 Learning Outcomes
+
 Through this project, I gained hands-on experience in:
 - Defensive cybersecurity (Blue Team)
 - SOC detection workflows
 - Security log monitoring
-- Python-based security automation
+- Python-based automation
+- Correlation-based threat detection
 - Professional documentation and GitHub workflows
 
 ---
 
 ## 🔮 Future Enhancements
-- Attack window correlation
+
+- Machine learning–based attack classification
 - Alert escalation rules
-- Email or SIEM-style alerts
+- Email or SIEM-style alerting
 - Dashboard visualization
-- Integration with SIEM tools (Splunk-style logic)
+- Integration with SIEM tools
 
 
